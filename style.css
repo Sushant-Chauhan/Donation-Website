@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f1c40f;
+}
+
+.site-header {
+  width: 100%;
+  height: 100vh;
+  background: #0f8a9d;
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  /*  gives polygon shape */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  /*background-color:  red;*/
+  display: flex;
+  color: white;
+}
+
+.logo {
+  margin: 1px;
+  width: 30%;
+  padding: 3px;
+}
+
+.menu {
+  width: 70%;
+  height: 100px;
+}
+
+.menu ul {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu ul li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: normal;
+  border: 1px solid blueviolet;
+  margin: 8px;
+}
+
+.menu ul li a {
+  position: relative;
+  padding: 5px 10px;
+  color: white;
+  display: inline-block;
+  text-decoration: none; /* Deletes line below anchor tag  -->   */
+}
+
+.menu ul li:hover {
+  background: orange;
+  font-size: 100%;
+  color: black;
+  padding: 10px;
+} /*  Menu Attrubutes without anchor tag  */
+
+.menu ul li a:hover {
+  background: orange;
+  font-size: 100%;
+  color: black;
+  padding: 10px;
+} /*  Menu Attrubutes with anchor tag  */
+
+#section {
+  display: flex;
+}
+
+.leftside {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-left: 3px;
+}
+
+.leftside img {
+  width: 100%;
+  height: 100%;
+}
+
+.rightside {
+  width: 55%;
+  height: 300px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  padding: 40px;
+}
+
+.rightside h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.rightside p {
+  font-size: 1.1rem;
+  padding: 30px 0;
+}
+
+.rightside button {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  border-radius: 24px 6px 52px 1px;
+  padding: 20px 35px;
+}
+
+.rightside button:hover,
+button:active {
+  background: linear-gradient(57deg, #1e4d92, #00c6a7);
+  font-size: 150%;
+  color: black;
+}
+
+/*.....................................................OUR OBJECTIVE..................................................... */
+
+.OBJECTIVE {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(57deg, #1e4d92, #00c6a7);
+  color: white;
+  border: 5px solid rgb(60, 201, 236);
+}
+
+.OBJECTIVE h2 {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.OBJECTIVE ul li {
+  list-style: none;
+  font-size: 10px;
+  font-weight: bold;
+  display: inline;
+  justify-content: space-around;
+  margin: 100px;
+}
+
+.OBJECTIVE ul li:hover {
+  background: linear-gradient(57deg, #e433a0, #00c6a7);
+  background: orange;
+  font-size: 100%;
+  color: black;
+  padding: 10px;
+}
+
+/*.....................................................About Us .................................................... */
+
+.ABOUT_US {
+  width: 100%;
+  height: 100vh;
+  background-color: tomato;
+  border: 10px solid yellow;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-stretch: expanded;
+  padding: 50px;
+}
+
+.ABOUT_US h2,
+p {
+  margin: 1rem;
+}
+
+/*.....................................................CONTACT US..................................................... */
+
+.contactForm {
+  font-weight: bold;
+  font-style: normal;
+  color: whitesmoke;
+  width: 95%;
+  height: 90%;
+  background: linear-gradient(57deg, #1e4d92, #00c6a7);
+  border-width: 15px;
+  border-style: solid;
+  border-top-color: rgb(74, 193, 230);
+  border-bottom-color: rgb(13, 221, 30);
+  border-left-color: rgb(16, 180, 192);
+  border-right-color: rgb(54, 247, 54);
+  border-radius: 40px;
+  margin: 30px;
+  padding: 1px;
+  text-transform: capitalize;
+}
+
+.contactForm {
+  margin: 35px;
+  padding: 5px;
+}
+
+#contact_Attribute {
+  /* placeholder/user response inside box style */
+  border: 2px solid rgb(50, 195, 205);
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 1rem;
+  width: 35%;
+}
+
+#contact_Attribute_Message {
+  /* same code as #contact_us , only 
+    width and height varies */
+  border: 5px solid rgb(50, 195, 205);
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 1rem;
+  width: 75%;
+  height: 30px;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #87eee9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(121, 121, 121);
+  margin: 2rem;
+}
+
+.button:hover {
+  background-color: #da2855;
+  color: white;
+}
+
+.button:active {
+  background-color: #433e8e;
+  box-shadow: 0 5px rgb(103, 240, 98);
+  transform: translateY(4px);
+  color: white;
+}
+
+.social {
+  align-items: center;
+  margin-left: 35%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  font-weight: bold;
+}
+
+#thanks {
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: small;
+  font-weight: bold;
+}
